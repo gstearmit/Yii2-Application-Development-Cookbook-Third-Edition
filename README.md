@@ -66,3 +66,12 @@ You can use HHVM for /usr/bin/php even if you have php-cli installed:
 
 ### Suggestions and Feedback 
  [Click here](https://docs.google.com/forms/d/e/1FAIpQLSe5qwunkGf6PUvzPirPDtuy1Du5Rlzew23UBp2S-P3wB-GcwQ/viewform)  if you have any feedback or suggestions.
+
+
+
+ if (!\Yii::$app->user->isGuest) {
+             return $this->goHome();
+         }
+         
+         
+ ['username', 'match', 'pattern' => '~^[A-Za-z][A-Za-z0-9]+$~', 'message' => 'Username can contain only alphanumeric characters.'],
